@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="169.0" prefWidth="332.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.ovm.uy.crd_import_script.view.config.ConfigController">
+  <!-- TODO Add Nodes -->
+  <bottom>
+    <ToolBar id="saveButton">
+      <items>
+        <Button fx:id="saveButton" mnemonicParsing="false" text="Guardar" />
+        <Button fx:id="exitButton" mnemonicParsing="false" text="Salir" />
+      </items>
+    </ToolBar>
+  </bottom>
+  <left>
+    <GridPane prefHeight="138.00009999999747" prefWidth="332.0">
+      <children>
+        <Label text="Host:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <PasswordField fx:id="passwordPasswordField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="userTextField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="hostTextField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Tabla:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="tableTextField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="80.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="252.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </left>
+</BorderPane>
